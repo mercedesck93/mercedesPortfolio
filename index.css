@@ -1,0 +1,42 @@
+/* 
+
+best size for a laptop screen
+minimum of 1024 × 768 px and a maximum of 1920 × 1080
+will use media queries to cater to other device sizes 
+
+*/ 
+
+
+/* not achieving desired layout */
+
+h1 {
+  font-family: Pacifico, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  grid-area: header;
+}
+
+.projects {
+  grid-area: main;
+}
+
+.skills {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "aside aside aside"
+  "footer footer footer";
+}
+

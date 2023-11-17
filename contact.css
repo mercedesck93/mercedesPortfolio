@@ -1,0 +1,51 @@
+/*    Container   */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.25fr 1fr 1fr 0.25fr;
+
+  grid-template-areas: 
+  ". header header ."
+  ". nav nav ."
+  "image image image image"
+  "contact contact contact contact"
+  "footer footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+  nav {
+    grid-area: nav;
+  }
+  .image {
+    grid-area: image;
+  }
+  .contact {
+    grid-area: contact;
+  }
+  footer {
+    grid-area: footer;
+  }
+
+header {
+  font-family: Pacifico, Geneva, Verdana, sans-serif;
+}
+
+header, nav {
+  text-align: center;
+}
+
+nav ul, li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.contact, .contact-details, .image {
+  text-align: center;
+}
+
+.contact ul, .contact-details ul {
+  list-style-type: none;
+}
+

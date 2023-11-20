@@ -1,106 +1,42 @@
-/*   Container   */
+/* 
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.25fr 1fr 1fr 0.25fr;
+best size for a laptop screen
+minimum of 1024 × 768 px and a maximum of 1920 × 1080
+will use media queries to cater to other device sizes 
 
-  grid-template-areas: 
-  "header header header header"
-  ". nav nav ."
-  "aboutme aboutme aboutme aboutme"
-  "projects projects skills skills"
-  "footer footer footer footer";
-  }
-
-  header {
-    grid-area: header;
-  }
-  nav {
-    grid-area: nav;
-  }
-  .aboutme {
-    grid-area: aboutme;
-  }
-  .projects {
-    grid-area: projects;
-  }
-  .skills {
-    grid-area: skills;
-  }
-  footer {
-    grid-area: footer;
-  }
+*/ 
 
 
- /*   Elements   */
+/* not achieving desired layout */
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
-  width: 100%;
-}
-
-nav ul, .projects ul, .intro ul, .skills ol {
-  list-style-type: none;
-}
-
-header {
-  text-align: center;
-}
-
-header, .skills h2, .projects h2 {
+h1 {
   font-family: Pacifico, Geneva, Verdana, sans-serif;
 }
 
-nav {
-  text-decoration: none;
-  text-align: center;
+.intro {
+  grid-area: header;
 }
 
-nav li {
-  display: inline-block;
-  padding: 10px;
+.projects {
+  grid-area: main;
 }
 
- /*   Media Queries   */
- /*
-@media only screen and (max-width: 1048px) {
-  .photos img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.skills {
+  grid-area: aside;
 }
 
-@media only screen and (max-width: 640px) {
-  .intro h1 {
-    margin-top: 2rem;
-  }
-
-  .intro {
-    max-height: 200px;
-  }
-
-  .photos img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  li {
-    display: block;
-    text-align: center;
-  }
+.footer {
+  grid-area: footer;
 }
 
-@media only screen and (max-width: 320px) {
-  .testimonial h1 {
-    font-size: 2rem;
-  }
-
-  .photos img {
-    width: 100%;
-  }
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "aside aside aside"
+  "footer footer footer";
 }
-*/
+

@@ -49,3 +49,14 @@ nav ul, li {
   list-style-type: none;
 }
 
+/* 
+
+best size for a laptop screen
+minimum of 1024 × 768 px and a maximum of 1920 × 1080
+will use media queries to cater to other device sizes 
+
+*/
+
+h1 {
+  font-family: Pacifico, Geneva, Verdana, sans-serif;
+}

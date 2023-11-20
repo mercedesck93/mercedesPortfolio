@@ -1,3 +1,9 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
 /*    Container   */
 .container {
   display: grid;
@@ -48,14 +54,6 @@ nav ul, li {
 .contact ul, .contact-details ul {
   list-style-type: none;
 }
-
-/* 
-
-best size for a laptop screen
-minimum of 1024 × 768 px and a maximum of 1920 × 1080
-will use media queries to cater to other device sizes 
-
-*/
 
 h1 {
   font-family: Pacifico, Geneva, Verdana, sans-serif;
